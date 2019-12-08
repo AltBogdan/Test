@@ -1,0 +1,26 @@
+
+#include <iostream>
+#include "windows.h"
+#include "math.h"
+
+using namespace std;
+
+int main()
+{
+	int a, b;
+	double h;
+	cin >> a >> b;
+	cin >> h;
+	double y, x = a;
+	do 
+	{
+		y = tan(pow(x, 3)) + x - 3;
+		printf("x=%f y=%f\n", x, y);
+		x += h;
+	} while (x <= b);
+	
+	system("pause");
+	return 0;
+
+}
+
